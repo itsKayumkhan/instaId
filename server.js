@@ -32,7 +32,7 @@ console.log(name,pass)
     // Save the user to the database
     await newUser.save();
 
-    res.status(201).json({ message: 'User registered successfully!' });
+    res.status(201).json({ message: 'wrong password please check the password' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Internal Server Error' });
